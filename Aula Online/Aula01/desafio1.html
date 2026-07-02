@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Minha Primeira Página</title>
+
+        <link rel="icon" href="favicon.ico">
+
+    </head>
+
+    <body>
+
+        <script>
+
+            let anoNascimentoStr = prompt("Digite o seu ano de nascimento:");
+
+            let anoNascimento = parseInt(anoNascimentoStr, 10);
+
+            const anoAtual = 2026;
+
+            if (isNaN(anoNascimento)) {
+
+                document.write("<p>Ano de nascimento inválido.</p>");
+
+            } else {
+
+                let idade = anoAtual - anoNascimento;
+
+                document.write("<p>Sua idade em " + anoAtual + " é: " + idade + "</p>");
+
+                console.log("Ano nascimento:", anoNascimento, "Idade:", idade);
+
+            }
+
+        </script>
+
+    </body>
+
+</html>
