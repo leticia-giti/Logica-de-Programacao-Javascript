@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lag="pt-br">
+    <body>
+        <script>
+            let anoNascimento = parseInt(prompt("Digite seu ano de nascimento: "));
+
+            if(isNaN(anoNascimento)){
+                document.write("<p>Você não digitou um ano! </p>");
+            } else{
+                var anoAtual = 2026;
+
+                let idade = anoAtual - anoNascimento;
+                if(idade >= 18){
+                    document.write("<p>Você é maior de idade </p>");
+                }
+                else{
+                    document.write("<p>Você é menor de idade </p>");
+                }
+                document.write("<p>Sua idade é: </p>");
+            }
+        </script>
+    </body>
+</html>

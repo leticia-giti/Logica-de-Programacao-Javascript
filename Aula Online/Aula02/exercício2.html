@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <body>
+        <script>
+        alert("Programa Solidário!\n[1] Doar R$10\n[2] Doar R$25\n[3] Doar R$50\n[4] Outros valores\n[5] Cancelar");
+        var valor;
+        valor = +prompt("Digite a opcao: ");
+        let doacao = 0;
+            if (isNaN(valor)) {
+            alert("Valor inválido! Por favor, tente novamente.");
+
+        }else{switch (valor){
+                case 1:
+                    doacao = 10;
+                    alert("Obrigada! Você doou R$10 <3");
+                    break;
+                case 2:
+                    doacao = 25;
+                    alert("Obrigada! Você doou R$25.");
+                    break;
+                case 3:
+                    doacao = 25;
+                    alert("Obrigada! Você doou R$50.");
+                    break;
+                case 4:
+                    doacao = +prompt("Digite o novo valor: ");
+                    alert("Obrigada! Você doou R$"+doacao);
+                    break;
+                case 5:
+                    alert("Cancelar operação.");
+                    break
+                }
+            }
+        document.write("Sua doação foi de R$"+ doacao + "<br>");
+        document.write("Muito Obrigado"+"<br>");
+        </script>
+    </body>
+</html>

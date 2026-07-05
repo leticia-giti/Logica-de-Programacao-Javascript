@@ -1,0 +1,31 @@
+%Façam um algoritmo que receba o valor do **salário** de uma pessoa e o valor de um **financiamento** pretendido.
+- Regra: O financiamento só é concedido se for **menor ou igual a 5 vezes o salário**.
+- Se for concedido, mostre: 'Financiamento Concedido'.
+- Senão, mostre: 'Financiamento Negado'.
+- No final (fora do if/else), mostre: 'Obrigado por nos consultar'.%
+
+<!DOCTYPE html>
+<html lag="pt-br">
+    <body>
+        <script>
+            alert("Analisador de viagem!")
+        let salario = parseFloat(prompt("Digite o seu salário: "));
+        let financiamento = parseFloat(prompt("Digite o valor do financiamento pretendido: "));
+
+        if (isNaN(salario) || isNaN(financiamento)) {
+            alert("Valor inválido! Por favor, tente novamente.");
+
+        } else if(financiamento >= 5 * saldo){
+            document.write("Você possui saldo R$" + saldo + "<br>");
+            document.write("Financiamento concedido!");
+        } else{
+            document.write("Você possui saldo R$" + saldo + "<br>");
+            document.write("Financiamento negado!");
+            }
+            document.write("Obrigado por nos consultar.");
+
+        
+            
+        </script>
+    </body>
+</html>
